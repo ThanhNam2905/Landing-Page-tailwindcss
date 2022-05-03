@@ -4,7 +4,7 @@
   "description": "Created Lading Page By TailwindCSS",
   "main": "index.js",
   "scripts": {
-    "tailwind": "tailwind build -i src/tailwind.css -o public/css/style.css"
+    "start": "tailwind build -i src/tailwind.css -o public/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
@@ -12,5 +12,8 @@
     "autoprefixer": "^10.4.5",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.24"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1"
   }
 }

@@ -7,12 +7,216 @@
     <link rel="shortcut icon" href="./images/taiwindcss.ico" type="image/x-icon">
     <title>TailwindCSS</title>
 
+    <!-- Fontawesome npm link all.css  -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.css">
+
     <!-- Customize CSS link style.css  -->
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
-<body>
+<body class="overflow-x-hidden">
     
+    <!-- Header section start  -->
+    <header class="header">
+        <div class="container mx-auto px-6 xl:px-32 py-3 xl:py-7 flex items-center justify-between gap-8">
+            <div class="logo-img w-24 md:w-8/12">
+                <img src="./images/logo-website.png" alt="logo website">
+            </div>
+            <nav class="navigation" id="navbar">
+                <ul class="flex flex-col md:flex-row gap-6 md:gap-10 text-center md:text-left">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li><a href="#" class="nav-link">Products</a></li>
+                    <li><a href="#" class="nav-link">FAQ</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="buttons z-9999 md:hidden" id="menu-btn">
+                <i class="fa-solid fa-bars text-gray-600 transition-all ease-in-out duration-500 hover:text-amber-500 text-2xl cursor-pointer"></i>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end  -->
+
+    <!-- Banner section start  -->
+    <section class="banner">
+        <div style="background-image: url('./images/banner.jpg');" 
+            class="w-full h-500 md:h-650 bg-no-repeat bg-cover relative">
+            <div class="content px-6 w-full text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <!-- Tag  -->
+                <span class="text-lg text-gray-400 font-semibold">Food app</span>
+                <!-- Title  -->
+                <h2 class="text-3.5xl text-gray-100 font-semibold leading-10 my-3">
+                    Why stay hungry when 
+                    you can order form Bella Onojie
+                </h2>
+                <!-- Text paragraph  -->
+                <p class="text-xl px-3 text-orange-600">Download the bella onoje’s food app now on</p>
+                <!-- Buttons  -->
+                <div class="inline-flex flex-col my-10">
+                    <button class="btn mb-6 hover:bg-white hover:text-orange-600">Playstore</button>
+                    <button class="btn bg-white text-orange-600 hover:bg-orange-600 hover:text-white after:bg-white">App store</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Banner section end  -->
+
+    <!-- AppPhone section start  -->
+    <section class="app-phone relative mt-2">
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-2/3 -translate-y-1/4">
+            <img src="./images/app-phone-img.png" class="max-w-none w-screen pl-20 md:w-auto" alt="phone app screens">
+        </div>
+    </section>
+    <!-- AppPhone section end  -->
+
+    <!-- AppStep section start  -->
+    <section class="app-step pt-64 my-28 sm:pt-20-rem md:pt-35-rem">
+        <div class="container px-4 text-center md:px-40">
+            <hr class="hidden md:block w-3/5 mx-auto h-0.5 bg-gray-200 md:w-4/5">
+            <!-- title  -->
+            <h2 class="text-xl font-semibold text-gray-700 mt-0 md:text-3.5xl md:font-bold md:mt-10">How the app works</h2>
+            <hr class="block md:hidden w-3/5 mx-auto h-0.5 bg-gray-200 mt-6">
+            <div class="step-1 flex flex-col items-center justify-evenly md:flex-row md:justify-between">
+                <div class="images mt-8 md:mt-0">
+                    <img src="./images/step-1.png" class="w-4/5 md:w-full mx-auto" alt="app screens">
+                </div>
+                <div class="content">
+                    <!-- tag  -->
+                    <span class="inline-block my-4 text-orange-600 text-xl font-bold">Create an account</span>
+                    <!-- title  -->
+                    <h3 class="text-3xl text-blue-800 font-bold leading-9">
+                        Create/login to an existing
+                        account to get started
+                    </h3>
+                    <!-- description  -->
+                    <p class="text-base text-gray-500 leading-6 my-3">
+                        An account is created with your email
+                        and a desired password
+                    </p>
+                </div>
+            </div>
+            <div class="step-2 flex flex-col  items-center justify-evenly md:flex-row md:justify-between">
+                <div class="images mt-8 md:mt-0 order-1 md:order-2">
+                    <img src="./images/step-1.png" class="w-4/5 md:w-full mx-auto" alt="app screens">
+                </div>
+                <div class="content order-2 md:order-1">
+                    <!-- tag  -->
+                    <span class="inline-block my-4 text-orange-600 text-xl font-bold">Explore varieties</span>
+                    <!-- title  -->
+                    <h3 class="text-3xl text-blue-800 font-bold leading-9">
+                        Shop for your favorites
+                        meal as e dey hot.
+                    </h3>
+                    <!-- description  -->
+                    <p class="text-base text-gray-500 leading-6 my-3">
+                        Shop for your favorite meals or drinks
+                        and enjoy while doing it.
+                    </p>
+                </div>
+            </div>
+            <div class="step-3 flex flex-col items-center justify-evenly md:flex-row md:justify-between">
+                <div class="images mt-8 md:mt-0 order-1">
+                    <img src="./images/step-1.png" class="w-4/5 md:w-full mx-auto" alt="app screens">                
+                </div>
+                <div class="content order-2">
+                    <!-- tag  -->
+                    <span class="inline-block my-4 text-orange-600 text-xl font-bold">Explore varieties</span>
+                    <!-- title  -->
+                    <h3 class="text-3xl text-blue-800 font-bold leading-9">
+                        Shop for your favorites
+                        meal as e dey hot.
+                    </h3>
+                    <!-- description  -->
+                    <p class="text-base text-gray-500 leading-6 my-3">
+                        Shop for your favorite meals or drinks
+                        and enjoy while doing it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- AppStep section end  -->
+
+    <!-- Download-app section start  -->
+    <section class="download-app">
+        <div class="container relative w-full h-500 object-cover bg-cover bg-no-repeat bg-center brightness-125 md:h-600" style="background-image: url('./images/bg-download.jpg');">
+            <div class="absolute px-6 md:px-0 w-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
+                <!-- title  -->
+                <h1 class="text-orange-500 font-bold text-3xl md:text-3.5xl xl:text-4xl">Download the app now.</h1>
+                <!-- description  -->
+                <p class="text-gray-300 text-lg font-semibold my-3 md:text-2xl md:my-7">Available on your favorite store. Start your premium experience now</p>
+                <!-- buttons  -->
+                <div class="buttons my-3 md:my-2 inline-flex flex-col md:flex-row justify-center gap-3 md:gap-4 xl:gap-6">
+                    <button class="btn rounded-xl">Playstore</button>
+                    <button class="btn rounded-xl bg-transparent border-white after:bg-transparent hover:border-orange-600 hover:bg-orange-600 hover:text-white md:inline-block">App store</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Download-app section end  -->
+
+    <!-- Footer section start  -->
+    <footer class="footer">
+        
+        <div class="container">
+            <div class="box">
+                <a href="/" class="logo">
+                    <img src="./images/logo-website.png" alt="logo website">
+                </a>
+                <!-- description  -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+                <!-- address  -->
+                <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <address class="text-green-500">District 6, Ho Chi Minh City</address>
+                </div>
+                <div class="time-open">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>9:00 am to 21:30 pm</p>
+                </div>
+                <div class="phone">
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+0942898298">094.289.8298</a>
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:thanhnam290596@gmail.com">thanhnam290596@gmail.com</a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>Quicks link</h3>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <i class="fa-solid fa-caret-right"></i>Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fa-solid fa-caret-right"></i>Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fa-solid fa-caret-right"></i>FAQ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <i class="fa-solid fa-caret-right"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copy-right">
+            Copyright &copy; Food App by TailwindCSS,  
+            <span>Friday, April 29, 2022</span>
+        </div>
+    </footer>
+    <!-- Footer section end  -->
+
 
 
 

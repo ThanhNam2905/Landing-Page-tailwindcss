@@ -8,7 +8,7 @@
 ## Step 4: 
     edit in file package.json
         "scripts": {
-            "tailwind": "tailwind build -i src/tailwind.css -o public/css/style.css"
+            "start": "tailwind build -i src/tailwind.css -o public/css/style.css --w"
         }
 ## Step 5:
-    npm run tailwind
+    npm run start
