@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden transition-all ease-in-out duration-500">
     
     <!-- Header section start  -->
     <header class="header">
@@ -156,63 +156,77 @@
     <!-- Download-app section end  -->
 
     <!-- Footer section start  -->
-    <footer class="footer">
-        
-        <div class="container">
-            <div class="box">
+    <footer class="footer px-6 xl:px-32 py-6 md:py-10 mx-auto bg-gray-200">
+        <div class="container grid grid-cols-1 gap-3 text-center md:gap-5 md:text-left md:grid-cols-3">
+            <div class="box w-full">
                 <a href="/" class="logo">
-                    <img src="./images/logo-website.png" alt="logo website">
+                    <img src="./images/logo-website.png" class="w-40 mx-auto mb-2 aspect-video object-contain md:w-56" alt="logo website">
                 </a>
                 <!-- description  -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
+                <p class="text-gray-800 text-base leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores.</p>
                 <!-- address  -->
-                <div class="address">
-                    <i class="fa-solid fa-location-dot"></i>
-                    <address class="text-green-500">District 6, Ho Chi Minh City</address>
+                <div class="address flex justify-center items-center gap-3 my-2 md:my-3 md:justify-start">
+                    <i class="fa-solid fa-location-dot text-lg text-orange-600"></i>
+                    <address class="text-gray-800 font-semibold">District 6, Ho Chi Minh City.</address>
                 </div>
-                <div class="time-open">
-                    <i class="fa-solid fa-clock"></i>
-                    <p>9:00 am to 21:30 pm</p>
+                <div class="time-open flex justify-center items-center gap-3 my-2 md:my-3 md:justify-start">
+                    <i class="fa-solid fa-clock text-lg text-orange-600"></i>
+                    <p class="text-gray-800 font-semibold">9:00 am to 21:30 pm</p>
                 </div>
-                <div class="phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+0942898298">094.289.8298</a>
+                <div class="phone flex justify-center items-center gap-3 my-2 md:my-3 md:justify-start">
+                    <i class="fa-solid fa-phone text-lg text-orange-600"></i>
+                    <a href="tel:+0942898298" class="text-gray-800 font-semibold hover:underline hover:underline-offset-4 hover:text-orange-600">094.289.8298</a>
                 </div>
-                <div class="mail">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:thanhnam290596@gmail.com">thanhnam290596@gmail.com</a>
+                <div class="mail flex justify-center items-center gap-3 my-2 md:my-3 md:justify-start">
+                    <i class="fa-solid fa-envelope text-lg text-orange-600"></i>
+                    <a href="mailto:thanhnam290596@gmail.com" class="text-gray-800 font-semibold hover:underline hover:underline-offset-4 hover:text-orange-600">thanhnam290596@gmail.com</a>
                 </div>
             </div>
             <div class="box">
-                <h3>Quicks link</h3>
+                <h3 class="text-xl text-gray-800 font-semibold mt-0 mb-1.5 md:text-2xl md:mb-3 md:mt-4">Quicks link</h3>
                 <ul>
                     <li>
-                        <a href="/">
-                            <i class="fa-solid fa-caret-right"></i>Home
+                        <a href="/" class="footer-link">
+                            <i class="fa-solid fa-caret-right text-lg mr-2 md:text-xl"></i>Home
                         </a>
                     </li>
                     <li>
-                        <a href="/">
-                            <i class="fa-solid fa-caret-right"></i>Products
+                        <a href="/" class="footer-link">
+                            <i class="fa-solid fa-caret-right text-lg mr-2 md:text-xl"></i>Products
                         </a>
                     </li>
                     <li>
-                        <a href="/">
-                            <i class="fa-solid fa-caret-right"></i>FAQ
+                        <a href="/" class="footer-link">
+                            <i class="fa-solid fa-caret-right text-lg mr-2 md:text-xl"></i>FAQ
                         </a>
                     </li>
                     <li>
-                        <a href="/">
-                            <i class="fa-solid fa-caret-right"></i>Contact
+                        <a href="/" class="footer-link">
+                            <i class="fa-solid fa-caret-right text-lg mr-2 md:text-xl"></i>Contact
                         </a>
                     </li>
                 </ul>
             </div>
+            <div class="box">
+                <h3 class="text-xl text-gray-800 font-semibold mt-0 mb-1.5 md:text-2xl md:mb-3 md:mt-4">Follow us</h3>
+                <a href="#" class="text-3xl text-blue-700 cursor-pointer mr-2 transform md:text-3.5xl" title="Facebook">
+                    <i class="fa-brands fa-facebook transition-all ease-in-out duration-300 hover:-translate-y-2 hover:shadow-md hover:shadow-blue-700 rounded-full"></i>
+                </a>
+                <a href="#" class="text-3xl text-transparent bg-clip-text bg-gradient-to-t from-indigo-500 via-purple-500 to-pink-500 cursor-pointer mr-2 transform md:text-3.5xl" title="Messenger">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                </a>
+                <a href="#" class="text-3xl text-pink-600 cursor-pointer mr-2 transform md:text-3.5xl" title="Instagram">
+                    <i class="fa-brands fa-instagram transition-all ease-in-out duration-300 hover:-translate-y-2 hover:shadow-md hover:shadow-pink-600 rounded-full "></i>
+                </a>
+                <a href="#" class="text-3xl text-gray-700 cursor-pointer mr-2 transform md:text-3.5xl" title="Github">
+                    <i class="fa-brands fa-github transition-all ease-in-out duration-300 hover:-translate-y-2 hover:shadow-md hover:shadow-gray-700 rounded-full"></i>
+                </a>
+            </div>
         </div>
 
-        <div class="copy-right">
+        <div class="copy-right py-4 mt-3 text-center text-base md:text-xl text-gray-700 border-t-4 border-orange-600">
             Copyright &copy; Food App by TailwindCSS,  
-            <span>Friday, April 29, 2022</span>
+            <span class="text-orange-600 italic">Friday, April 29, 2022</span>
         </div>
     </footer>
     <!-- Footer section end  -->
