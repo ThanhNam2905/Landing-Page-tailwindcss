@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 @layer components {
+
+    /* CSS Navigation */
     .nav-link {
         @apply  text-2xl 
               text-white
@@ -88,6 +90,29 @@
               hover:after:opacity-0
     }
 
+    /* CSS Footer */
+    .footer-link {
+      @apply text-gray-800 
+              text-base 
+              font-semibold 
+              underline-offset-2 
+              transition 
+              ease-in-out 
+              duration-500
+              mb-2.5
+              inline-block
+              hover:text-orange-600 
+              hover:underline
+
+              md:text-lg
+    }
+    .footer-link:hover i {
+      @apply  mr-4
+              transition
+              ease-in-out
+              duration-500
+              italic
+    }
 
 
 
