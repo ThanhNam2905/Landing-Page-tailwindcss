@@ -4,9 +4,58 @@
 
 @layer components {
 
+    /* CSS Btn scroll-top */
+    #scroll-top i {
+        @apply  
+                fixed 
+                bottom-10 
+                -right-10 
+                z-999999
+                text-2xl 
+                py-1.5 
+                px-3.5
+                rounded-full 
+                cursor-pointer 
+                text-orange-500 
+                bg-transparent 
+                border-4 
+                opacity-0
+                border-orange-500 
+                hover:bg-orange-500 
+                hover:text-white 
+                hover:border-double 
+                hover:border-white
+
+                md:text-3xl
+                md:py-3 
+                md:px-5 
+    }
+    #scroll-top i.fa-solid.fa-angle-up.active {
+        @apply  
+                bottom-7 
+                right-7
+                opacity-100 
+                
+                md:right-12
+                md:bottom-10 
+    }
+
+    /* CSS Header */
+    .header {
+        @apply  fixed 
+                top-0 
+                left-0
+                z-99999
+                w-full 
+                bg-white
+                shadow-md
+                shadow-orange-400
+    }
+
     /* CSS Navigation */
     .nav-link {
-        @apply  text-2xl 
+        @apply  
+                text-2xl 
               text-white
                 font-semibold
                 transition 
@@ -20,17 +69,18 @@
     }
 
     .navigation {
-        @apply  fixed 
+        @apply   
+                fixed 
                 top-0 
-                left-full 
-                z-9999
+                left-0
+                z-999
                 w-full 
-                h-screen 
+                h-screen
                 flex 
                 items-center 
                 justify-center   
               bg-gray-800 
-                bg-opacity-70
+                bg-opacity-95
                 opacity-0 
                 transition-all 
                 ease-in-out 
@@ -51,7 +101,7 @@
     }
 
     .navigation.active ~ #menu-btn i {
-        @apply  transform rotate-180 text-4xl;
+        @apply  transform rotate-180 text-3xl;
     }
 
     /* CSS Button  */
@@ -113,11 +163,6 @@
               duration-500
               italic
     }
-
-
-
-
-
 
 }
 
